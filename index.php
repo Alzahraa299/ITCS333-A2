@@ -15,3 +15,38 @@ catch(Exception $e){
     $errorMessage = $e->getMessage();
 }
 ?>
+
+
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Assignment2</title>
+    <meta name="description" content="Students nationalities" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css" />   
+</head>
+
+<!--body-->
+<body>
+   <header>
+       
+   </header> 
+   <main>
+        <section id="tables">
+
+            <div class="overflow-auto">
+                <table class="striped">
+                    <thead>
+                        <tr>
+                        <th></th>
+                        <th></th>
+                        </tr>
+                        
+                    </thead>
+                </table>
+            </div>
+        </section>
+   </main>
+</body>
+</html>
