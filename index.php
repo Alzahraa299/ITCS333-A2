@@ -4,6 +4,14 @@ $A2URL = "https://data.gov.bh/api/explore/v2.1/catalog/datasets/01-statistics-of
 try{
     $response = file_get_contents($A2URL);
 
+    if ($response === false ){
+        throw new Exception("failed to fetch data from the API");
+    
+    }
      $result = json_decode($response, true);
-
+     $records= $result['records']??[];
 }
+catch(Exception $e){
+    $errorMessage = $e->getMessage();
+}
+?>
