@@ -9,7 +9,7 @@ try{
     
     }
      $result = json_decode($response, true);
-     $records= $result['records']??[];
+     $records= $result['results']??[];
 }
 catch(Exception $e){
     $errorMessage = $e->getMessage();
