@@ -23,7 +23,13 @@ catch(Exception $e){
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Assignment 2</title>
     <meta name="description" content="Students nationalities" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css" />   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css" />
+     <style>
+        h2,h4,h6{  text-align: center;}
+        #er{ color: red;}
+        table{  text-align: justify;    background-color: lightskyblue;}
+        th{ font-size: larger;  background-color: black; color: white;}
+    </style> 
 </head>
 
 <!--body-->
@@ -42,7 +48,7 @@ catch(Exception $e){
        <!--(1)-->
             <?php if(isset($errorMessage)): ?>
                 <div>
-                    <h4>Error:<br> <?php echo $errorMessage; ?> </h4>
+                    <h4 id='er'>Error:<br> <?php echo $errorMessage; ?> </h4>
                 </div>
 
        <!--(2)-->
